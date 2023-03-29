@@ -54,6 +54,15 @@ To verify that the model could generalize I validated it on out of sample data i
 
 The app displays opacity bounding boxes, but internally the model is also trained to predict a bounding box for the lungs. Therefore, if the lungs are not detected then the app outputs an error message to say that the image was not a chest x-ray.
 
+The local validation map@0.5 was 0.8. 
+
+The accuracy on out of sample data was as follows:
+- The Shenzhen and Montgomery Tuberculosis datasets -> 0.8
+- The DA and DB Tuberculosis datasets -> 0.8
+- The Child Chest X-Ray Images Pneumonia dataset 0.8
+
+The main issue was the high number of false positives. The model was not trained on pediatric data, nevertheless the accuracy on the Child Chest X-Ray Images Pneumonia dataset was 0.8. My view is that these numbers are more of a guide than an accurate reflection of the model's quality. X-rays are not a high precision diagnosis tool. The model should be tested by Radiologists under real world conditions to accurately assess its true capability.
+
 <br>
 
 ## 4- How to zoom into the image
