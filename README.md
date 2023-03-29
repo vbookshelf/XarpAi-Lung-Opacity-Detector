@@ -199,9 +199,15 @@ The code for reviewing the val preds made by the model created in exp07. Demonst
 
 <br>
 
-## 5- Licenses
+## 6- Licenses
 
 All code that I've created is free to use under an MIT license. However, please note that some of the datasets that I used to train the model have more restrictive licences. Therefore, the trained model can only be used for research of education.
 
 <br>
+
+## 7- Citations
+
+Mask R-CNN
+https://arxiv.org/abs/1703.06870
+
 
