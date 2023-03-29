@@ -34,6 +34,7 @@ The app ouputs an interactive image. Clicking on the image causes the bounding b
 - It’s not a one click setup. The user needs to have a basic knowledge of how to use the command line to set up a virtual environment, download requirements and launch a python app.
 - The model’s ability to generalize to real world data is unproven.
 - The model may predict multiple overlapping bounding boxes. I've not fixed this because this is a prototype and the bounding boxes can be hidden by simply clicking on the image.
+- The model predicts a lot of false positives.
 
 <br>
 
