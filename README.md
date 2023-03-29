@@ -207,7 +207,7 @@ All code that I've created is free to use under an MIT license. However, please 
 
 ## 7- Citations
 
-Mask R-CNN
+Mask R-CNN<br>
 https://arxiv.org/abs/1703.06870
 
 
