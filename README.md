@@ -16,12 +16,16 @@ The app ouputs an interactive image. Clicking on the image causes the bounding b
 
 ## 1- Main Features
 
-- Runs on the CPU. 
-- Images are interactive. Clicking an image causes the bounding boxes to disappear.
-- A user can zoom into an image by using the desktop zoom feature that’s built into Mac and Windows.
-- Multiple images can be submitted
-- Free to use. Free to deploy. No server rental costs like with a web app.
+- Free to use. Free to deploy. No monthly server rental costs like with a web app.
+- Completely transparent. All code is accessible and therefore fully auditable.
 - Runs locally without needing an internet connection
+- Takes images in dicom, png or jpg format as input
+- Can analyze multiple images simultaneously
+- Uses the computer’s cpu. A gpu would make the app much faster, but it's not essential.
+- Results are explainable because it draws bounding boxes around detected opacities
+- Patient data remains private because it never leaves the user’s computer
+- Images are interactive. Clicking an image causes the bounding boxes to disappear.
+
 
 <br>
 
