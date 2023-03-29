@@ -5,7 +5,7 @@ Opacities are characteristic signs of TB and Pneumonia. This app is a prototype 
 
 The app ouputs an interactive image. Clicking on the image causes the bounding boxes to appear and disappear. This feature plus image zoom makes it easier for a person to review the output image. This a flask app running on the desktop. Internally the app is powered by a Faster-RCNN model that was trained on data from four chest x-ray detection datasets.
 These included:
-- The TBX11K Simplified Tuberculosis dataset
+- The TBX11K Tuberculosis dataset
 - The Kaggle RSNA Pneumonia Detection Challenge
 - The Kaggle VinBigData Chest X-ray Abnormalities Detection competition
 - The Kaggle SIIM-FISABIO-RSNA COVID-19 Detection competition
