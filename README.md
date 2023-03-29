@@ -187,6 +187,14 @@ The code for reviewing the val preds made by the model created in exp07. Demonst
 Exp_11-Kaggle<br>
 The code for reviewing the val preds made by the model created in exp07. Demonstrates cpu inference using the Torch Hub workflow. This is the inference method that's used in the app.
 
+<br>
+
+## 5- Licenses
+
+All code that I have created is free to use under an MIT license. However, please note that the datasets that was used to train the model may have more restrictive licences.
+
+The Ultralytics Yolov5 model is licensed under a GNU General Public License.<br>
+https://github.com/ultralytics/yolov5/blob/master/LICENSE
 
 <br>
 
