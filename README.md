@@ -1,7 +1,7 @@
 # XarpAi Lung Opacity Detector
 An Ai powered desktop app that auto detects opacities on chest x-rays.
 
-Opacities are characteristic signs of TB and Pneumonia. This app is a prototype high volume diagnosis support tool. It auto analyzes chest x-rays and highlights potential opacities. Radiologists can then review the highlighted areas and use their clinical judgment to make a final diagnosis.
+Opacities are characteristic signs of TB and Pneumonia. This app auto analyzes chest x-rays and highlights potential opacities. Radiologists can then review the highlighted areas and use their clinical judgment to make a final diagnosis.
 
 The app ouputs an interactive image. Clicking on the image causes the bounding boxes to appear and disappear. This feature plus image zoom makes it easier for a person to review the output image. This a flask app running on the desktop.
 
