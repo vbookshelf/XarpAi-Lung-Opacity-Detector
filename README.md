@@ -40,14 +40,14 @@ The app ouputs an interactive image. Clicking on the image causes the bounding b
 
 ## 3- Training and Validation
 
-Internally the app is powered by a Faster-RCNN model that was trained on data from four chest x-ray detection datasets.
+Internally the app is powered by a Faster-RCNN model that was trained on data sampled from four chest x-ray detection datasets.
 These included:
 - The TBX11K Tuberculosis dataset
 - The Kaggle RSNA Pneumonia Detection Challenge
 - The Kaggle VinBigData Chest X-ray Abnormalities Detection competition
 - The Kaggle SIIM-FISABIO-RSNA COVID-19 Detection competition
 
-To verify that the model could generalize I validated it on out of sample data i.e. datasets from sources that the model had not seen to during training. These included:
+To verify that the model could generalize I validated it on out of sample data i.e. datasets from sources that the model had not seen during training. These are classification datasets i.e. they don't have opacity annotations. Therefore, if the model predicted a bounding box it meant that it was predicting 'opacity' and if it didn't predict a bounding box it mean't that the model was predicting 'no_opacity'. Using this approach I performed a classification evaluation - I created confusion matrices and classification reports. These are the datasets I used:
 - The Shenzhen and Montgomery Tuberculosis datasets
 - The DA and DB Tuberculosis datasets
 - The Child Chest X-Ray Images Pneumonia dataset
@@ -61,7 +61,7 @@ The accuracy on out of sample data was as follows:
 - The DA and DB Tuberculosis datasets -> 0.8
 - The Child Chest X-Ray Images Pneumonia dataset 0.8
 
-The main issue was the high number of false positives. The model was not trained on pediatric data, nevertheless the accuracy on the Child Chest X-Ray Images Pneumonia dataset was 0.8. My view is that these numbers are more of a guide than an accurate reflection of the model's quality. X-rays are not a high precision diagnosis tool. The model should be tested by Radiologists under real world conditions to accurately assess its true capability.
+The main issue was the high number of false positives. The model was not trained on pediatric data, nevertheless the accuracy on the Child Chest X-Ray Images Pneumonia dataset was 0.8.
 
 <br>
 
