@@ -266,7 +266,7 @@ I sampled data from the following datasets. I used this data to train a model to
 
 I used version 1 of the VGG Image Annotator (VIA) to create a dataset of lung annotations.
 
-### The VIA Annotation Software for Images, Audio and Video<br>
+#### The VIA Annotation Software for Images, Audio and Video<br>
 - Paper: https://www.robots.ox.ac.uk/~vgg/software/via/docs/dutta2019vgg_arxiv.pdf
 - Website: https://www.robots.ox.ac.uk/~vgg/software/via/
 
