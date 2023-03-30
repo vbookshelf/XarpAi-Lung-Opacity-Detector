@@ -263,4 +263,10 @@ I sampled data from the following datasets. I used this data to train a model to
 - Paper: https://osf.io/532ek/
 
 
+## 8- Acknowledgements
 
+Many thanks to Kaggle for the free GPU and the other dataset resources they provide. I don't have my own GPU or big data cloud storage. Therefore, this project would not have been possible without Kaggle's free resources.
+
+Thanks to Eric Chen. His blog post "Fine-tuning Mask-RCNN using PyTorch" helped demystify the Pytorch Kask-RCNN workflow for me. Using a Pytorch based workflow was key to being able to easily train and deploy this model.
+
+Also many thanks to all those who so generously made their chest x-ray datasets publicly available.
