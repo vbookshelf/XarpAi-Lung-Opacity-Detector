@@ -1,5 +1,5 @@
 # XarpAi Lung Opacity Detector
-An Ai powered desktop app that auto detects opacities on chest x-rays.
+### An Ai powered desktop app that auto detects opacities on chest x-rays.
 
 <br>
 
