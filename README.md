@@ -314,7 +314,7 @@ https://albumentations.ai/docs/getting_started/transforms_and_targets/
 
 <br>
 
-## Lessons learned
+## 10- Lessons learned
 
 - Classification models can produce stellar local vaidation results, but they can fail miserably on out of sample x-ray data. Real world chest x-rays can come from a variety of sources and vary in quality. Keep this in mind when trying to reduce the number of false positives by using a classification plus detection workflow.
 - Use CHAT-GPT as your consulting radiologist. It answers medical questions clearly and concidely, in a way that ordinary people can understand. CHAT-GPT has passed the medical board exam. Try asking a question like: How do radiologists differentiate between TB and Pneumonia?
