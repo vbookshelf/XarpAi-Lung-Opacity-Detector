@@ -299,15 +299,15 @@ https://www.robots.ox.ac.uk/~vgg/software/via/
 List of TB and Pneumonia Chest X-ray Datasets<br>
 https://github.com/vbookshelf/List-of-TB-and-Pneumonia-Datasets
 
-Flask experiments
+Flask experiments<br>
 https://github.com/vbookshelf/Flask-Experiments
 
 Chat-GPT<br>
 https://openai.com/blog/chatgpt/
 
 How to augment boxes together with the images<br>
-https://albumentations.ai/docs/getting_started/bounding_boxes_augmentation/
+https://albumentations.ai/docs/getting_started/bounding_boxes_augmentation/<br>
 Albumentations Github<br>
-https://github.com/albumentations-team/albumentations
+https://github.com/albumentations-team/albumentations<br>
 A list of transformations that support bounding boxes<br>
 https://albumentations.ai/docs/getting_started/transforms_and_targets/
