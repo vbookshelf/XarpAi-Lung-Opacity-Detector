@@ -262,6 +262,15 @@ I sampled data from the following datasets. I used this data to train a model to
 - Dowload from Kaggle: https://www.kaggle.com/competitions/siim-covid19-detection/data
 - Paper: https://osf.io/532ek/
 
+<br>
+
+I used version 1 of the VGG Image Annotator (VIA) to create a dataset of lung annotations.
+
+### The VIA Annotation Software for Images, Audio and Video<br>
+- Paper: https://www.robots.ox.ac.uk/~vgg/software/via/docs/dutta2019vgg_arxiv.pdf
+- Website: https://www.robots.ox.ac.uk/~vgg/software/via/
+
+<br>
 
 ## 8- Acknowledgements
 
@@ -270,3 +279,35 @@ Many thanks to Kaggle for the free GPU and the other dataset resources they prov
 Thanks to Eric Chen. His blog post "Fine-tuning Mask-RCNN using PyTorch" helped demystify the Pytorch Kask-RCNN workflow for me. Using a Pytorch based workflow was key to being able to easily train and deploy this model.
 
 Also many thanks to all those who so generously made their chest x-ray datasets publicly available.
+
+<br>
+
+## 9- References and Resources
+
+Fine-tune PyTorch Pre-trained Mask-RCNN by Eric Chen<br>
+https://haochen23.github.io/2020/06/fine-tune-mask-rcnn-pytorch.html#.Y-0MX-xBzUI
+
+Beagle Detector: Fine-tune Faster-RCNN by Eric Chen<br>
+https://haochen23.github.io/2020/06/fine-tune-faster-rcnn-pytorch.html#.Y-2VjexBzUI
+
+Kaggle COVID-19 Comp solutions<br>
+https://www.rsna.org/education/ai-resources-and-training/ai-image-challenge/covid-19-al-detection-challenge-2021
+
+VGG Image Annotator (VIA)<br>
+https://www.robots.ox.ac.uk/~vgg/software/via/
+
+List of TB and Pneumonia Chest X-ray Datasets<br>
+https://github.com/vbookshelf/List-of-TB-and-Pneumonia-Datasets
+
+Flask experiments
+https://github.com/vbookshelf/Flask-Experiments
+
+Chat-GPT<br>
+https://openai.com/blog/chatgpt/
+
+How to augment boxes together with the images<br>
+https://albumentations.ai/docs/getting_started/bounding_boxes_augmentation/
+Albumentations Github<br>
+https://github.com/albumentations-team/albumentations
+A list of transformations that support bounding boxes<br>
+https://albumentations.ai/docs/getting_started/transforms_and_targets/
