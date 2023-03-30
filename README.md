@@ -5,7 +5,7 @@ An Ai powered desktop app that auto detects opacities on chest x-rays.
 
 Opacities are characteristic signs of TB and Pneumonia. This app auto analyzes chest x-rays and highlights potential opacities. Radiologists can then review the highlighted areas and use their clinical judgment to make a final diagnosis.
 
-Radiologists have large workloads and there's a shortage of radiologists in the developing world. This free tool provides automated high volume diagnosis support. It can help speed up a radiologists workflow. 
+Radiologists have large workloads and there's a shortage of radiologists in the developing world. This free tool provides automated high volume diagnosis support. It can help speed up a radiologist's workflow. 
 
 
 <br>
