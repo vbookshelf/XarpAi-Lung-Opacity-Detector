@@ -210,7 +210,9 @@ All code that I've created is free to use under an MIT license. However, please 
 #### Mask R-CNN<br>
 Paper: https://arxiv.org/abs/1703.06870
 
-To train and validate the model I sampled data from the following datasets:
+<br>
+
+I sampled data from the following datasets. I used this data to train a model to detect and isolate lungs and to train a model to detect and isolate opacities.
 
 #### Shenzhen and Montgomery datasets
 - Download from Kaggle: https://www.kaggle.com/datasets/kmader/pulmonary-chest-xray-abnormalities<br>
@@ -236,6 +238,10 @@ To train and validate the model I sampled data from the following datasets:
 - A version of this dataset was used for a Kaggle competition: https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnormalities-detection/overview
 - Download: https://physionet.org/content/vindr-cxr/1.0.0/<br>
 - Paper: https://www.nature.com/articles/s41597-022-01498-w
+
+#### VinDr-PCXR dataset
+- Download: https://physionet.org/content/vindr-pcxr/1.0.0/<br>
+- Paper: https://www.medrxiv.org/content/10.1101/2022.03.04.22271937v1.full-text
 
 #### Tuberculosis (TB) Chest X-ray Database
 - Download from Kaggle: https://www.kaggle.com/datasets/tawsifurrahman/tuberculosis-tb-chest-xray-dataset<br>
