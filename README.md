@@ -315,5 +315,5 @@ https://albumentations.ai/docs/getting_started/transforms_and_targets/
 ## Lessons learned
 
 - Classification models can produce stellar local vaidation results, but they can fail miserably on out of sample data. In the real world chest x-ray data may come from a variety of sources and vary in quality. 
-- Use CHAT-GPT as your consulting radiologist. It answers medical questions clearly without including confusing medical terminology. CHAT-GPT has passed the medical board exam. Try asking a question like: How do radiologists differentiate between TB and Pneumonia?
+- Use CHAT-GPT as your consulting radiologist. It answers medical questions clearly and concidely, in a way that ordinary people can understand. CHAT-GPT has passed the medical board exam. Try asking a question like: How do radiologists differentiate between TB and Pneumonia?
 - Albumentations can augment images and change their assiciated bounding boxes. But take care when using rotations because the augmented bounding boxes are not tight and accurate.
