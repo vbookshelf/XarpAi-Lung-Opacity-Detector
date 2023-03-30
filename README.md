@@ -207,50 +207,54 @@ All code that I've created is free to use under an MIT license. However, please 
 
 ## 7- Links to algorithm and datasets
 
-### Mask R-CNN<br>
-https://arxiv.org/abs/1703.06870
+#### Mask R-CNN<br>
+Paper: https://arxiv.org/abs/1703.06870
 
-### Shenzhen and Montgomery datasets
+To train and validate the model I sampled data from the following datasets:
+
+#### Shenzhen and Montgomery datasets
 - Download from Kaggle: https://www.kaggle.com/datasets/kmader/pulmonary-chest-xray-abnormalities<br>
 - Paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4256233/
 
 
-### TBX11K Simplified
+#### TBX11K Simplified
 - Download from Kaggle: https://www.kaggle.com/datasets/vbookshelf/tbx11k-simplified<br>
 - Paper: https://openaccess.thecvf.com/content_CVPR_2020/papers/Liu_Rethinking_Computer-Aided_Tuberculosis_Diagnosis_CVPR_2020_paper.pdf
 
 
-### Belarus dataset
+#### Belarus dataset
 - Download: https://github.com/frapa/tbcnn/tree/master/belarus<br>
 - Paper: https://www.nature.com/articles/s41598-019-42557-4
 
-### DA and DB datasets
+#### DA and DB datasets
 - Download from Kaggle: https://www.kaggle.com/datasets/vbookshelf/da-and-db-tb-chest-x-ray-datasets<br>
 - Download: https://sourceforge.net/projects/tbxpredict/files/data/<br>
 - Paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4229306/
 
 
-### VinDr-CXR dataset
+#### VinDr-CXR dataset
 - A version of this dataset was used for a Kaggle competition: https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnormalities-detection/overview
 - Download: https://physionet.org/content/vindr-cxr/1.0.0/<br>
 - Paper: https://www.nature.com/articles/s41597-022-01498-w
 
-### Tuberculosis (TB) Chest X-ray Database
+#### Tuberculosis (TB) Chest X-ray Database
 - Download from Kaggle: https://www.kaggle.com/datasets/tawsifurrahman/tuberculosis-tb-chest-xray-dataset<br>
 - Paper: https://ieeexplore.ieee.org/document/9224622
 
-### Child Chest X-Ray Images (Version 2)
+#### Child Chest X-Ray Images (Version 2)
 - paultimothymooney dataset version 2 on Kaggle: https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia<br>
 - andrewmvd dataset version 2 on Kaggle: https://www.kaggle.com/datasets/andrewmvd/pediatric-pneumonia-chest-xray<br>
 - Paper: https://www.cell.com/cell/fulltext/S0092-8674(18)30154-5
 
 
-### RSNA Pneumonia Detection Challenge
+#### RSNA Pneumonia Detection Challenge
 - Download from Kaggle: https://www.kaggle.com/competitions/rsna-pneumonia-detection-challenge/data<br>
 - Download from the RSNA website: https://www.rsna.org/education/ai-resources-and-training/ai-image-challenge/rsna-pneumonia-detection-challenge-2018<br>
 - Paper: https://pubs.rsna.org/doi/10.1148/ryai.2019180041
 
-### SIIM-FISABIO-RSNA COVID-19 Detection
+#### SIIM-FISABIO-RSNA COVID-19 Detection
 - Dowload from Kaggle: https://www.kaggle.com/competitions/siim-covid19-detection/data
 - Paper: https://osf.io/532ek/
+
+
 
