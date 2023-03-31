@@ -320,6 +320,10 @@ https://albumentations.ai/docs/getting_started/transforms_and_targets/
 ## 10- Lessons learned
 
 - Classification models can produce stellar local validation results, but they can fail miserably on out of sample x-ray data. Real world chest x-rays can come from a variety of sources and vary in quality. Keep this in mind when trying to reduce the number of false positives by using a classification plus detection workflow.
+
+
 - Use CHAT-GPT as your consulting radiologist. It answers medical questions clearly and concidely, in a way that ordinary people can understand. CHAT-GPT has passed the medical board exam. Try asking a question like: How do radiologists differentiate between TB and Pneumonia?
+
 - Albumentations can augment images and change their assiciated bounding boxes. But take care when using rotations because the augmented bounding boxes are not tight and accurate.
+
 - Some datasets may be very large. Not everyone has the resources to download and store big datasets. However, in many x-ray datasets only a small percentage of the data consists of positive samples (e.g. TB images). The vast majority are normal images. Therefore, its better to use the dataset's API to download only the positive samples and a percentage of the negative samples - one at a time. Download the images using a Kaggle notebook and store the images in the notebook's output. In this way you'll be taking advantage of Kaggle's fast internet speed and data storage capability.
