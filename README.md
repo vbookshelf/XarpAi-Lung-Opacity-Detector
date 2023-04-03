@@ -281,7 +281,7 @@ Many thanks to Kaggle for the free GPU and the other dataset resources they prov
 
 Thanks to Eric Chen. His blog post "Fine-tuning Mask-RCNN using PyTorch" helped demystify the Pytorch Kask-RCNN workflow for me. Using a Pytorch based workflow was key to being able to easily train and deploy this model.
 
-Also many thanks to all those who so generously made their chest x-ray datasets publicly available.
+Also many thanks to all the researchers who so generously made their chest x-ray datasets publicly available.
 
 <br>
 
