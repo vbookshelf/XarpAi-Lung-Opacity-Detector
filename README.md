@@ -171,7 +171,7 @@ $ deactivate
 
 ```
 
-There are sample images in the sample_wheat_images folder. You can use them to test the app.
+There are sample images in the sample_xray_images folder. You can use them to test the app.
 
 While the app is analyzing, please look in the console to see if there are any errors. If there are errors, please do what’s needed to address them. Then relaunch the app.
 
