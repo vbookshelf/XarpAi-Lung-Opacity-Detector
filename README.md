@@ -82,13 +82,13 @@ Place the mouse pointer on the area that you want to magnify then:
 
 ### First download the project folder from Kaggle
 
-I've stored the project folder (named wheat-head-auto-counter) in a Kaggle dataset.<br>
-https://www.kaggle.com/datasets/vbookshelf/wheat-head-auto-counter
+I've stored the project folder (named xarpai-lung-opacity-detector) in a Kaggle dataset.<br>
+https://www.kaggle.com/datasets/vbookshelf/xarpai-lung-opacity-detector
 
 
 I suggest that you download the project folder from Kaggle instead of from this GitHub repo. This is because the project folder on Kaggle includes the trained model. The project folder in this repo does not include the trained model because GitHub does not allow files larger than 25MB to be uploaded.<br>
-The model is located inside a folder called TRAINED_MODEL_FOLDER, which is located inside the yolov5 folder:<br>
-wheat-head-auto-counter/yolov5/TRAINED_MODEL_FOLDER/
+The model is located inside a folder called TRAINED_MODEL_FOLDER, which is located inside the xarpai-lung-opacity-detector folder:<br>
+xarpai-lung-opacity-detector/TRAINED_MODEL_FOLDER/
 
 <br>
 
@@ -134,7 +134,7 @@ https://www.youtube.com/watch?v=MzuGMSw8la0&t=167s
 ```
 
 1. Download the project folder, unzip it and place it on your desktop.
-In this repo the project folder is named: wheat-head-auto-counter
+In this repo the project folder is named: xarpai-lung-opacity-detector
 Then open your command line console.
 The instructions that follow should be typed on the command line. 
 There’s no need to type the $ symbol.
