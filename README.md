@@ -201,25 +201,27 @@ While the app is analyzing, please look in the console to see if there are any e
 
 ## 5- Model Training and Validation
 
-The model card contains a summary of the training and validation datasets as well as the validation results. There's also some info about the app. Please refer to this document:<br>
+The model card contains a summary of the training and validation datasets as well as the validation and test results. There's also info about the app. Please refer to this document:<br>
 https://github.com/vbookshelf/Wheat-Head-Auto-Counter/blob/main/wheat-head-auto-counter-v1.0/Model-Card-and-App-Info%20v1.0.pdf
 
-All the project jupyter notebooks are stored in the folder called "Notebooks". There are four notebooks. 
-Each notebook was run either on Kaggle or on VAST.<br>
+There are many jupyter notebooks for this project. All are stored on Kaggle, so there's full traceability. Four of the main notebooks are stored in this repo in the folder called "Notebooks".<br>
 https://github.com/vbookshelf/Wheat-Head-Auto-Counter/tree/main/wheat-head-auto-counter-v1.0/Notebooks
 
 
-Exp_05-Kaggle<br>
-The code to create 7 folds. Only fold 0 was used for training and validation.
+Exp_103<br>
+The code to train the model.
 
-Exp_07-VAST<br>
-The code for training and validating the model.
+Exp_104<br>
+The code to test the model on the Shenzhen and Montgomery TB datasets.
 
-Exp_09-Kaggle<br>
-The code for reviewing the val preds made by the model created in exp07. Demonstrates GPU nference using the Yolov5 detect.py workflow.
+Exp_105<br>
+The code to locally validate the model on 20% of the data.
 
-Exp_11-Kaggle<br>
-The code for reviewing the val preds made by the model created in exp07. Demonstrates cpu inference using the Torch Hub workflow. This is the inference method that's used in the app.
+Exp_106<br>
+The code to test the model on Child Chest X-Ray Pneumonia dataset.
+
+Exp_107<br>
+The code to test the model on the DA and DB Tuberculosis datasets.
 
 <br>
 
