@@ -64,10 +64,10 @@ https://www.kaggle.com/datasets/vbookshelf/xarpai-lung-opacity-detector/discussi
 
 ## 1- Main Features
 
-- Can run on an ordinary computer. No need for large amounts of RAM or a GPU.
 - Free to use.
-- Completely transparent. All code is accessible and therefore fully auditable.
+- Can run on an ordinary computer. No need for large amounts of RAM or a GPU.
 - Runs locally without needing an internet connection
+- Completely transparent. All code is accessible and therefore fully auditable.
 - Takes images in dicom, png or jpg format as input
 - Can analyze multiple images simultaneously
 - Uses the computer’s cpu. A gpu would make the app much faster, but it's not essential.
@@ -80,7 +80,7 @@ https://www.kaggle.com/datasets/vbookshelf/xarpai-lung-opacity-detector/discussi
 
 ## 2- Cons
 
-- It’s not a one click setup. The user needs to have a basic knowledge of how to use the command line to set up a virtual environment, download requirements and launch a python app.
+- It’s not a one click setup. The user needs to have a basic knowledge of how to use the command line to set up a virtual environment, download requirements and launch a python app. However, a high-schooler who knows Python could set this app up in a few minutes.
 - The model’s ability to generalize to real world data is unproven.
 - The model may predict multiple overlapping bounding boxes. I've not fixed this because this is a prototype and the bounding boxes can be hidden by simply clicking on the image.
 - The model predicts false positives.
