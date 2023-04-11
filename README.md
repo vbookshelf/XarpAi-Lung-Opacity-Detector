@@ -5,7 +5,7 @@
 
 <br>
 <img src="https://github.com/vbookshelf/XarpAi-Lung-Opacity-Detector/blob/main/images/tb0688.png" height="400"></img>
-<i>Sample prediction<br>This opacity is an indicator of TB</i><br>
+<i>Sample image<br>This opacity is an indicator of TB</i><br>
 <br>
 
 
