@@ -22,7 +22,7 @@ The predictions are made by a Pytorch Faster R-CNN model. The model was fine tun
 - The Kaggle VinBigData Chest X-ray Abnormalities Detection competition
 - The Kaggle SIIM-FISABIO-RSNA COVID-19 Detection competition
 
-Although the app outputs opacity bounding boxes, the model was also trained to detect lungs i.e. it predicts a bounding box that surrounds both lungs, in addition to the opacity bounding boxes. If the model fails to detect the lungs then the app outputs an error message. In the current model this does not work flawlessly. You’ll note that if you submit the image of the dog, the model correctly outputs an error message. But when you submit the mammogram, this model (exp114) does not output an error message, the exp96 version did.
+Although the app outputs opacity bounding boxes, the model was also trained to detect lungs i.e. it predicts a bounding box that surrounds both lungs. If the model fails to detect the lungs then the app outputs an error message. In the current model this does not work flawlessly. You’ll note that if you submit the image of the dog, the model correctly outputs an error message. But when you submit the mammogram, this model (exp114) does not output an error message, the exp96 version did.
 
 The model was validated on an 80/20 train test split. It was also tested on three out of sample datasets:
 
@@ -33,7 +33,7 @@ The model was validated on an 80/20 train test split. It was also tested on thre
 These out of sample datasets don’t have annotated opacity bounding boxes. Therefore, accuracy was used as a rough metric - if the target was positive (e.g. positive for TB) and the model predicted a bounding box, the model was deemed to have made a correct prediction. This validation approach is not rigorous. But it’s a quick and simple way to get a feel for the model’s capability.
 
 Results on the 20% validation data:<br>
-map@0.5: 0.776<br>
+- map@0.5: 0.776<br>
 accuracy: 0.91<br>
 
 Accuracy on out of sample datasets:
@@ -43,7 +43,7 @@ Accuracy on out of sample datasets:
 
 Chest x-rays can be difficult for humans to read. One study (TBX11k paper) found that radiologists have a 68.7% accuracy when diagnosing TB on chest x-rays. Using that number for context, the model’s test results look very good. The good performance on the child pneumonia data is surprising because the training data didn’t include a large number of child x-rays. 
 
-These results indicate that this opacity detection app could be a helpful diagnosis support tool for lung diseases like TB and Pneumonia. The next step would be for radiologists to test the app.
+These results show that this opacity detection app could be helpful when diagnosing lung diseases like TB and Pneumonia. The next step would be for radiologists to test the app.
 
 Questions that need to be answered:
 
