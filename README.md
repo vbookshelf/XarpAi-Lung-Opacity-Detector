@@ -301,6 +301,8 @@ Many thanks to Kaggle for the free GPU and the other dataset resources they prov
 
 Thanks to Eric Chen. His blog post "Fine-tuning Mask-RCNN using PyTorch" helped demystify the Pytorch Kask-RCNN workflow for me. Using a Pytorch based workflow was key to being able to easily train and deploy this model.
 
+Thanks to Guanshuo Xu. It was from his 10th place Covid-19 Kaggle Competition solution that I got the idea to assign a bounding box to an entire normal image. By doing this the model is able to predict a label for images without objects.
+
 Also many thanks to all the researchers who so generously made their chest x-ray datasets publicly available.
 
 <br>
@@ -312,6 +314,10 @@ https://haochen23.github.io/2020/06/fine-tune-mask-rcnn-pytorch.html#.Y-0MX-xBzU
 
 Beagle Detector: Fine-tune Faster-RCNN by Eric Chen<br>
 https://haochen23.github.io/2020/06/fine-tune-faster-rcnn-pytorch.html#.Y-2VjexBzUI
+
+COVID-19 AI Detection Challenge (2021) 10th place solution by Guanshuo Xu<br>
+https://www.youtube.com/watch?v=voEUo5p5uXo
+
 
 Kaggle COVID-19 Comp solutions<br>
 https://www.rsna.org/education/ai-resources-and-training/ai-image-challenge/covid-19-al-detection-challenge-2021
