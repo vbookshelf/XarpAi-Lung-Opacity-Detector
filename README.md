@@ -1,16 +1,61 @@
 # XarpAi Lung Opacity Detector
 ### An Ai powered desktop app that auto detects opacities on chest x-rays.
 
-<br>
-
-Opacities are characteristic signs of TB and Pneumonia. This app auto analyzes chest x-rays and highlights potential opacities. Radiologists can then review the highlighted areas and use their clinical judgment to make a final diagnosis.
-
-Radiologists have large workloads and there's a shortage of radiologists in the developing world. This free tool provides automated high volume diagnosis support. It can help speed up a radiologist's workflow. 
 
 
 <br>
 <img src="https://github.com/vbookshelf/XarpAi-Lung-Opacity-Detector/blob/main/images/tb0688.png" height="400"></img>
 <i>Sample prediction<br>This opacity is an indicator of TB</i><br>
+<br>
+
+
+The XarpAi Lung Opacity Detector is a proof-of-concept for a free, open-source desktop app that uses artificial intelligence to detect opacities on chest x-rays. 
+
+Opacities are characteristic signs of lung diseases like TB and Pneumonia. This app analyses chest x-rays and draws bounding boxes around opacities. Radiologists can then review these areas of interest and use their clinical judgement to make a final diagnosis.
+
+There’s a shortage of radiologists in poor countries. In 2015, Rwanda had 11 radiologists to serve its population of 12 million people. Liberia, with a population of four million, had two practising radiologists. This app provides high volume diagnosis support. It can help overwhelmed radiologists triage x-rays and speed up their workflows.
+
+The predictions are made by a Pytorch Faster R-CNN model. The model was fine tuned on data from four chest x-ray datasets:
+
+- The TBX11K Tuberculosis dataset
+- The Kaggle RSNA Pneumonia Detection Challenge
+- The Kaggle VinBigData Chest X-ray Abnormalities Detection competition
+- The Kaggle SIIM-FISABIO-RSNA COVID-19 Detection competition
+
+Although the app outputs opacity bounding boxes, the model was also trained to detect lungs i.e. it predicts a bounding box that surrounds both lungs, in addition to the opacity bounding boxes. If the model fails to detect the lungs then the app outputs an error message. In the current model this does not work flawlessly. You’ll note that if you submit the image of the dog, the model correctly outputs an error message. But when you submit the mammogram, this model (exp114) does not output an error message, the exp96 version did.
+
+The model was validated on an 80/20 train test split. It was also tested on three out of sample datasets:
+
+- The Shenzhen and Montgomery Tuberculosis datasets
+- The DA and DB Tuberculosis datasets
+- Child Chest X-Ray Pneumonia dataset
+
+These out of sample datasets don’t have annotated opacity bounding boxes. Therefore, accuracy was used as a rough metric - if the target was positive (e.g. positive for TB) and the model predicted a bounding box, the model was deemed to have made a correct prediction. This validation approach is not rigorous. But it’s a quick and simple way to get a feel for the model’s capability.
+
+Results on the 20% validation data:<br>
+map@0.5: 0.776<br>
+accuracy: 0.91<br>
+
+Accuracy on out of sample datasets:
+- Shenzhen and Montgomery TB datasets: 0.84
+- DA and DB TB datasets: 0.85
+- Child Chest X-Ray Pneumonia dataset: 0.83
+
+Chest x-rays can be difficult for humans to read. One study (TBX11k paper) found that radiologists have a 68.7% accuracy when diagnosing TB on chest x-rays. Using that number for context, the model’s test results look very good. The good performance on the child pneumonia data is surprising because the training data didn’t include a large number of child x-rays. 
+
+These results indicate that this opacity detection app could be a helpful diagnosis support tool for lung diseases like TB and Pneumonia. The next step would be for radiologists to test the app.
+
+Questions that need to be answered:
+
+1- Will the false positives disqualify this app from everyday use?<br>
+2- Will users be comfortable using the command line to download and set it up?<br>
+3- Is the model’s performance robust and trustworthy?<br>
+4- Does the model really perform as well on paediatric images as the test results indicate?<br>
+5- Does the fact that the app is free make it less likely that it will be taken seriously?<br>
+
+Thank you for trying this app. Please feel free to share your feedback in the discussion forum on Kaggle.
+https://www.kaggle.com/datasets/vbookshelf/xarpai-lung-opacity-detector/discussion
+
 <br>
 
 ## Demo
@@ -19,7 +64,8 @@ Radiologists have large workloads and there's a shortage of radiologists in the 
 
 ## 1- Main Features
 
-- Free to use. Free to deploy. No monthly server rental costs like with a web app.
+- Can run on an ordinary computer. No need for large amounts of RAM or a GPU.
+- Free to use.
 - Completely transparent. All code is accessible and therefore fully auditable.
 - Runs locally without needing an internet connection
 - Takes images in dicom, png or jpg format as input
@@ -37,38 +83,13 @@ Radiologists have large workloads and there's a shortage of radiologists in the 
 - It’s not a one click setup. The user needs to have a basic knowledge of how to use the command line to set up a virtual environment, download requirements and launch a python app.
 - The model’s ability to generalize to real world data is unproven.
 - The model may predict multiple overlapping bounding boxes. I've not fixed this because this is a prototype and the bounding boxes can be hidden by simply clicking on the image.
-- The model predicts a lot of false positives.
+- The model predicts false positives.
 
 <br>
 
-## 3- Training and Validation
 
-Internally the app is powered by a Faster-RCNN model that was trained on data sampled from four chest x-ray detection datasets.
-These included:
-- The TBX11K Tuberculosis dataset
-- The Kaggle RSNA Pneumonia Detection Challenge
-- The Kaggle VinBigData Chest X-ray Abnormalities Detection competition
-- The Kaggle SIIM-FISABIO-RSNA COVID-19 Detection competition
 
-To verify that the model could generalize I validated it on out of sample data i.e. datasets from sources that the model had not seen during training. These are classification datasets i.e. they don't have opacity annotations. Therefore, if the model predicted a bounding box it meant that it was predicting 'opacity' and if it didn't predict a bounding box it mean't that the model was predicting 'no_opacity'. Using this approach I performed a classification evaluation - I created confusion matrices and classification reports. These are the datasets I used:
-- The Shenzhen and Montgomery Tuberculosis datasets
-- The DA and DB Tuberculosis datasets
-- The Child Chest X-Ray Images Pneumonia dataset
-
-The app displays opacity bounding boxes, but internally the model is also trained to predict a bounding box for the lungs. Therefore, if the lungs are not detected then the app outputs an error message to say that the image was not a chest x-ray.
-
-The local validation map@0.5 was 0.8. 
-
-The accuracy on out of sample data was as follows:
-- The Shenzhen and Montgomery Tuberculosis datasets -> 0.8
-- The DA and DB Tuberculosis datasets -> 0.8
-- The Child Chest X-Ray Images Pneumonia dataset 0.8
-
-The main issue was the high number of false positives. The model was not trained on pediatric data, nevertheless the accuracy on the Child Chest X-Ray Images Pneumonia dataset was 0.8.
-
-<br>
-
-## 4- How to zoom into the image
+## 3- How to zoom into the image
 
 To magnify the image use the desktop zoom feature that’s built into both Mac and Windows 10. 
 
@@ -78,7 +99,7 @@ Place the mouse pointer on the area that you want to magnify then:
 
 <br>
 
-## 5- How to run this app
+## 4- How to run this app
 
 ### First download the project folder from Kaggle
 
