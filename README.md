@@ -22,7 +22,7 @@ The predictions are made by a Pytorch Faster R-CNN model. The model was fine tun
 - The Kaggle VinBigData Chest X-ray Abnormalities Detection competition
 - The Kaggle SIIM-FISABIO-RSNA COVID-19 Detection competition
 
-Although the app outputs opacity bounding boxes, the model was also trained to detect lungs i.e. it predicts a bounding box that surrounds both lungs. If the model fails to detect the lungs then the app outputs an error message. In the current model this does not work flawlessly. You’ll note that if you submit the image of the dog, the model correctly outputs an error message. But when you submit the mammogram, this model (exp114) does not output an error message (the exp96 version did).
+Although the app outputs opacity bounding boxes, the model was also trained to detect lungs i.e. it predicts a bounding box that surrounds both lungs. If the model fails to detect the lungs then the app outputs an error message.
 
 The model was validated on an 80/20 train test split. It was also tested on three out of sample datasets:
 
@@ -43,15 +43,7 @@ Accuracy on out of sample datasets:
 
 Chest x-rays can be difficult for humans to read. One study (TBX11k paper) found that radiologists have a 68.7% accuracy when diagnosing TB on chest x-rays. Using that number for context, the model’s test results look very good. The good performance on the child pneumonia data is surprising because the training data didn’t include a large number of child x-rays. 
 
-These results show that this opacity detection app could be helpful when diagnosing lung diseases like TB and Pneumonia. The next step would be for radiologists to test the app.
-
-Questions that need to be answered:
-
-1- Will the false positives disqualify this app from everyday use?<br>
-2- Will users be comfortable using the command line to download and set it up?<br>
-3- Is the model’s performance robust and trustworthy?<br>
-4- Does the model really perform as well on paediatric images as the test results indicate?<br>
-5- Does the fact that the app is free make it less likely that it will be taken seriously?<br>
+These results show that this opacity detection app could be helpful when diagnosing lung diseases like TB and Pneumonia.
 
 Thank you for trying this app. Please feel free to share your feedback in the discussion forum on Kaggle.
 https://www.kaggle.com/datasets/vbookshelf/xarpai-lung-opacity-detector/discussion
