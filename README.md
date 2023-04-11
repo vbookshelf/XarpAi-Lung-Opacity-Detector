@@ -53,6 +53,11 @@ https://www.kaggle.com/datasets/vbookshelf/xarpai-lung-opacity-detector/discussi
 ## Demo
 
 <br>
+<img src="https://github.com/vbookshelf/XarpAi-Lung-Opacity-Detector/blob/main/images/xarpai-opacity.gif" height="400"></img>
+<i>Demo showing what happens after a user submits three images</i><br>
+<br>
+
+<br>
 
 ## 1- Main Features
 
