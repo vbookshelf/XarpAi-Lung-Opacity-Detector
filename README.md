@@ -22,7 +22,7 @@ The predictions are made by a Pytorch Faster R-CNN model. The model was fine tun
 - The Kaggle VinBigData Chest X-ray Abnormalities Detection competition
 - The Kaggle SIIM-FISABIO-RSNA COVID-19 Detection competition
 
-Although the app outputs opacity bounding boxes, the model was also trained to detect lungs i.e. it predicts a bounding box that surrounds both lungs. If the model fails to detect the lungs then the app outputs an error message. In the current model this does not work flawlessly. You’ll note that if you submit the image of the dog, the model correctly outputs an error message. But when you submit the mammogram, this model (exp114) does not output an error message, the exp96 version did.
+Although the app outputs opacity bounding boxes, the model was also trained to detect lungs i.e. it predicts a bounding box that surrounds both lungs. If the model fails to detect the lungs then the app outputs an error message. In the current model this does not work flawlessly. You’ll note that if you submit the image of the dog, the model correctly outputs an error message. But when you submit the mammogram, this model (exp114) does not output an error message (the exp96 version did).
 
 The model was validated on an 80/20 train test split. It was also tested on three out of sample datasets:
 
@@ -227,7 +227,7 @@ The code to test the model on the DA and DB Tuberculosis datasets.
 
 ## 6- Licenses
 
-All code that I've created is free to use under an MIT license. However, please note that some of the datasets that I used to train the model have more restrictive licences. Therefore, the trained model can only be used for research of education.
+The app code is available under an MIT License. But please note that the trained model can't be used commercially because some of the training data is not licensed for commercial use.
 
 <br>
 
