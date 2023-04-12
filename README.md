@@ -202,7 +202,7 @@ The model card contains a summary of the training and validation datasets as wel
 https://github.com/vbookshelf/XarpAi-Lung-Opacity-Detector/blob/main/xarpai-lung-opacity-detector-v1.0/static/assets/Model-Card-and-App-Info-v1.0.pdf
 
 There are many jupyter notebooks for this project. All are stored on Kaggle, so there's full traceability. Four of the main notebooks are stored in this repo in the folder called "Notebooks".<br>
-https://github.com/vbookshelf/Wheat-Head-Auto-Counter/tree/main/wheat-head-auto-counter-v1.0/Notebooks
+https://github.com/vbookshelf/XarpAi-Lung-Opacity-Detector/tree/main/xarpai-lung-opacity-detector-v1.0/Notebooks
 
 
 Exp_103<br>
