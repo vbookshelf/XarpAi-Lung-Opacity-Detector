@@ -299,7 +299,7 @@ I used version 1 of the VGG Image Annotator (VIA) to create a dataset of lung an
 
 Many thanks to Kaggle for the free GPU and the other dataset resources they provide. I don't have my own GPU or big data cloud storage. Therefore, this project would not have been possible without Kaggle's free resources.
 
-Thanks to Eric Chen. His blog post "Fine-tuning Mask-RCNN using PyTorch" helped demystify the Pytorch Kask-RCNN workflow for me. Using a Pytorch based workflow was key to being able to easily train and deploy this model.
+Thanks to Eric Chen. His blog post "Fine-tuning Mask-RCNN using PyTorch" helped demystify the Pytorch Mask-RCNN workflow for me. Using a Pytorch based workflow was key to being able to easily train and deploy this model.
 
 Thanks to Guanshuo Xu. It was from his 10th place Covid-19 Kaggle Competition solution that I got the idea to assign a bounding box to an entire normal image. By doing this the model is able to predict a label for images without objects.
 
@@ -345,10 +345,10 @@ https://albumentations.ai/docs/getting_started/transforms_and_targets/
 
 ## 10- Lessons learned
 
-- Classification models can produce stellar local validation results, but they can fail miserably on out of sample x-ray data. Real world chest x-rays can come from a variety of sources and vary in quality. Keep this in mind when trying to reduce the number of false positives by using a classification plus detection workflow.
+- Classification models can produce stellar local validation results, but they can fail miserably on out of sample x-ray data. Real world chest x-rays can come from a variety of sources and vary in quality. This is important to remember when trying to reduce the number of false positives by using a classification plus detection workflow.
 
 
-- Use CHAT-GPT as your consulting radiologist. It answers medical questions clearly and concidely, in a way that ordinary people can understand. CHAT-GPT has passed the medical board exam. Try asking a question like: How do radiologists differentiate between TB and Pneumonia?
+- Use CHAT-GPT as a consulting radiologist. It answers medical questions clearly and concidely, in a way that ordinary people can understand. CHAT-GPT has passed the medical board exam. Try asking a question like: How do radiologists differentiate between TB and Pneumonia?
 
 - Albumentations can augment images and change their assiciated bounding boxes. But take care when using rotations because the augmented bounding boxes are not tight and accurate.
 
